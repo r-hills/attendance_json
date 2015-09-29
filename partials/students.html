@@ -1,0 +1,38 @@
+<h3>Students</h3>
+<div ng-model="updateLogin">
+	<div class="row">
+		<div class="col-sm-4">
+			<h4 ng-show="signedOut.length">Sign In: </h4>
+		</div>
+	</div>
+	<div class="row">
+		<div ng-repeat="item in signedOut = (students | filter:loggedIn=false |orderBy:'name' | orderBy:'loggedIn')">
+			<div class="col-sm-4 signin-buttons">
+				<!-- Display SignIn button if logged out -->
+				<a ng-click="updateLoginStatus(item)" class="btn btn-small btn-success" ng-hide="item.loggedIn"> Sign In </a>
+
+				<!-- Display LogOut button if signed In -->
+				<!-- <a ng-click="updateLoginStatus(item)" class="btn btn-small btn-warning" ng-show="item.loggedIn">Log Out</a> -->
+
+				<span class="name-display"> {{ " &nbsp; " + item.name }}</span>
+			</div>			
+		</div>
+	</div>
+	<div class="row signin-labels">
+		<div class="col-sm-4">
+			<h4 ng-show="signedIn.length">Sign Out: </h4>
+		</div>
+	</div>
+	<div class="row">
+		<div ng-repeat="item in signedIn = (students | filter:loggedIn=true |orderBy:'name' | orderBy:'loggedIn')">
+			<div class="col-sm-4 signin-buttons">
+
+				<!-- Display LogOut button if signed In -->
+				<a ng-click="updateLoginStatus(item)" class="btn btn-small btn-warning" ng-show="item.loggedIn">Log Out</a>
+
+				<span class="name-display"> {{ " &nbsp; " + item.name }}</span>
+			</div>			
+		</div>
+	</div>
+</div>
+

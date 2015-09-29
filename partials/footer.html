@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-sm-8 navigate">
+		<a ui-sref="home" class="btn btn-primary" 
+		   ng-hide="currentPath === '/' || currentPath === ''">
+		   <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home 
+		</a>
+		<a ui-sref="teachers" class="btn btn-info" 
+		   ng-hide="currentPath === '/teachers'"> Teachers page 
+		</a>
+		<a ui-sref="students" class="btn btn-info"
+		   ng-hide="currentPath === '/students'"> Students page </a>
+	</div>
+</div>

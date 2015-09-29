@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Askr</title>
+
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="http://fonts.gstatic.com">
+    <script>
+
+var WebFontConfig = {
+    google: {
+        families: ['Source Sans Pro:400,600']
+    }
+};
+!function(n, o, d, e, j, s) {
+    n.GoogleAnalyticsObject = d;
+    n[d] || (n[d] = function() {
+        (n[d].q = n[d].q || []).push(arguments)
+    }
+    );
+    n[d].l = +new Date;
+    j = o.createElement(e);
+    s = o.getElementsByTagName(e)[0];
+    j.async = 1;
+    j.src = '//www.google-analytics.com/analytics.js';
+    s.parentNode.insertBefore(j, s)
+}
+(window, document, 'ga', 'script');
+
+ga('create', 'UA-67020396-1', 'auto');
+ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <a href="/en" id="logo">
+              <img src="/static/images/logo.svg" height="75" width="180" alt="node.js">
+            </a>
+            <nav>
+                <ul class="list-divider-pipe">
+                    <li class="active">
+                        <a href="/en/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/en/about/">About</a>
+                    </li>
+                    <li>
+                        <a href="/en/download/">Downloads</a>
+                    </li>
+                    <li>
+                        <a href="/en/docs/">Docs</a>
+                    </li>
+                    <li>
+                        <a href="/en/foundation/">Foundation</a>
+                    </li>
+                    <li>
+                        <a href="/en/get-involved/">Get Involved</a>
+                    </li>
+                    <li>
+                        <a href="/en/security/">Security</a>
+                    </li>
+                    <li>
+                        <a href="/en/blog/">News</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container">
+
+            <div id="home-intro">
+
+                <p>Node.js® is a JavaScript runtime built on <a href="https://developers.google.com/v8/">Chrome&#39;s V8 JavaScript engine</a>.
+Node.js uses an event-driven, non-blocking I/O model that makes it
+lightweight and efficient. Node.js&#39; package ecosystem, <a href="https://www.npmjs.com/">npm</a>, is the largest ecosystem of open
+source libraries in the world.</p>
+
+
+                      <p class="home-version">Current Version: v4.1.1</p>
+
+                <a href="https://nodejs.org/dist/v4.1.1/" id="home-downloadbutton" data-version="v4.1.1" data-dl-local="Download for">Download</a>
+
+                <ul class="list-divider-pipe home-secondary-links">
+                    <li><a href="https://nodejs.org/dist/v4.1.1/">Other Downloads</a></li>
+                    <li><a href="https://github.com/nodejs/node/blob/v4.1.1/CHANGELOG.md">Changelog</a></li>
+                    <li><a href="/api/">API Docs</a></li>
+                </ul>
+
+            </div>
+
+            <style>
+
+div.interactive-banner {
+    background: #333 url("/static/images/nodejs-interactive-portland2015.jpg") 50% 0px no-repeat;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    width: 100%;
+    line-height: 300px;
+    margin-top: 20px;
+}
+div.interactive-banner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    height: 140px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+@media screen and (max-width: 550px) {
+    div.interactive-banner img {
+        padding-top:100px;
+        height: auto;
+        width: 300px;
+    }
+}
+footer {
+    margin-top: 0px;
+}
+</style>
+
+        </div>
+    </div>
+
+    <a href="http://events.linuxfoundation.org/events/node-interactive">
+        <div class="interactive-banner">
+            <img src="/static/images/NodeInteractive_Date_white.png" alt="Node Interactive" title="Node Interactive">
+        </div>
+    </a>
+
+    <a href="#" id="scrollToTop">&uarr; <span>Scroll to top</span></a>
+
+    <footer role="contentinfo">
+
+        <div class="linuxfoundation-footer">
+            <div class="container">
+                <div class="issue-link-container">
+                    <ul class="list-divider-pipe issue-link">
+                        <li><a href="https://github.com/nodejs/node/issues">Report Node.js issue</a></li>
+                        <li><a href="https://github.com/nodejs/new.nodejs.org/issues">Report website issue</a></li>
+                    </ul>
+                    <a class="linuxfoundation-logo" href="http://collabprojects.linuxfoundation.org">Linux Foundation Collaborative Projects</a>
+                </div>
+
+                <p>© 2015 Node.js Foundation. All Rights Reserved. Portions of this site originally © 2015 Joyent. </p>
+                <p>Node.js is a trademark of Joyent, Inc. and is used with its permission. Please review the Trademark Guidelines of the Node.js Foundation <a href="/static/documents/trademark-policy.pdf">here</a>.</p>
+                <p>Linux Foundation is a registered trademark of The Linux Foundation.</p>
+                <p>Linux is a registered <a href="http://www.linuxfoundation.org/programs/legal/trademark" title="Linux Mark Institute">trademark</a> of Linus Torvalds.</p>
+                <p>
+                   <a href="https://raw.githubusercontent.com/nodejs/node/master/LICENSE">Node.js Project Licensing Information</a>.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <link rel="stylesheet" href="/static/css/prism-tomorrow.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" async defer>
+</script>
+    <script type="text/javascript">
+
+var $scrollToTop = document.getElementById('scrollToTop');
+(window.onscroll = function() {
+    $scrollToTop.style.display = (window.pageYOffset > window.innerHeight) ? 'block' : 'none';
+}
+)();
+$scrollToTop.onclick = function() {
+    window.scrollTo(0, 0);
+    return false;
+}
+;
+</script>
+
+    <script>
+
+(function(d, e, m, s) {
+    if (!/(MSIE|Trident)/.test(navigator.userAgent)) {
+        return;
+    }
+    m = d.createElement(e);
+    s = d.getElementsByTagName(e)[0];
+    m.async = 1;
+    m.src = '/static/js/modernizr.custom.js';
+    m.onload = function() {
+        Modernizr.addTest('flexboxtweener', Modernizr.testAllProps('flexAlign'));
+    }
+    ;
+    s.parentNode.insertBefore(m, s);
+}
+)(document, 'script');
+</script>
+
+    <script src="/static/js/download.js" async defer>
+</script>
+</body>
+</html>

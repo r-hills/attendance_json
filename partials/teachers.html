@@ -1,0 +1,20 @@
+<h3>View Current Student Login Status</h3>
+<div class="row">
+	<div class="col-sm-8">
+		<h4 ng-show="loggedInStudents.length">Signed In: </h4>
+		<h4 ng-hide="loggedInStudents.length">No Students currently Signed In </h4>	
+		<ul ng-model="updateLogin">	
+			<li ng-repeat="item in loggedInStudents = (students | filter:loggedIn=true | orderBy:'name')"> {{ item.name }} </li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-8">
+		<h4 ng-show="loggedOutStudents.length">Not Signed In: </h4>
+		<h4 ng-hide="loggedOutStudents.length">No Students currently Signed Out </h4>	
+		<ul ng-model="updateLogin">	
+			<li ng-repeat="item in loggedOutStudents = (students | filter:loggedIn=false | orderBy:'name')"> {{ item.name }} </li>
+		</ul>
+	</div>
+</div> 
+
